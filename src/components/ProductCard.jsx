@@ -43,7 +43,7 @@ const ProductCard = ({ dishes, }) => {
                 </div>
             </div>
             {
-                !dishes?.dish_Availability && <p className="text-red-500 absolute top-[15%] right-[50%] max-lg:top-[20%] max-lg:right-[40%] font-bold">Dish not availability</p>
+                !dishes?.dish_Availability && <p className="text-red-500 absolute top-[15%] right-[50%] max-lg:top-[20%] max-lg:right-[40%] font-bold">Dish not available</p>
             }
         </div>
 
