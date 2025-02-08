@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import Header from "../components/Header"
-import CustomTab from "../components/ui/customTab";
 import { useEffect } from "react";
 import { dishCountDecrement, dishCountIncrement, fetchDishList } from "../store/Dish/DishListSlice";
 import { DishCategoryWrap } from "../components/DishCategoryWrap";
+import CustomTab from "../components/ui/CustomTab";
 
 const Home = () => {
 
