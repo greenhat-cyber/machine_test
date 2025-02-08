@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+* {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+/* Custom Scrollbar Styles */
+.scrollbar-custom::-webkit-scrollbar {
+    height: 2px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
