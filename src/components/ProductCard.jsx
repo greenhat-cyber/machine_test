@@ -17,10 +17,10 @@ const ProductCard = ({ dishes, }) => {
                     <div className="w-auto pl-7">
                         <div className="flex items-center w-full max-lg:pr-4">
                             <div className="w-[50%] flex items-center justify-start">
-                              <p className="text-sm line-clamp-3 font-bold">{dishes?.dish_currency} {dishes?.dish_price}</p>
+                                <p className="text-sm line-clamp-3 font-bold">{dishes?.dish_currency} {dishes?.dish_price}</p>
                             </div>
                             <div className="w-[50%] flex items-center justify-end">
-                             <p className="text-sm font-bold line-clamp-3">{dishes?.dish_calories} calories</p>
+                                <p className="text-sm font-bold line-clamp-3">{dishes?.dish_calories} calories</p>
                             </div>
                         </div>
                         <div className="flex gap-1 flex-col">
@@ -31,8 +31,10 @@ const ProductCard = ({ dishes, }) => {
                     </div>
                 </div>
                 <div className="flex items-center justify-end max-lg:items-start col-span-2">
-                    <div className="w-[100px] h-[100px] max-lg:w-[80px] max-lg:h-[80px] flex-shrink-0 shadow rounded-2xl flex items-center">
+                    <div className="w-[100px] h-[100px] max-lg:w-[80px] max-lg:h-[80px] flex-shrink-0 shadow rounded-2xl flex items-center overflow-hidden">
                         <img
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-full object-cover rounded-2xl"
                             src={dishes?.dish_image}
                             alt={dishes?.dish_name}

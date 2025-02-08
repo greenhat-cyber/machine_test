@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import Loader from "./Loader";
+import NoData from "./NoData";
 
 const CustomTab = ({ tabs, isLoading, isData}) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -18,7 +19,7 @@ const CustomTab = ({ tabs, isLoading, isData}) => {
         ))}
       </div>
       <div className="py-4">
-        {isLoading ? <Loader/> : isData === 0 ? <p>No Data</p> : tabs[activeTab]?.content}
+        {isLoading ? <Loader/> : isData === 0 ? <NoData/> : tabs[activeTab]?.content}
       </div>
     </>
   );
